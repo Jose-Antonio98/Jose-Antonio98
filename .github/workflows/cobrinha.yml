@@ -1,39 +1,14 @@
-workflow_dispatch:
-    inputs:
-      version:
-        description: "Version"
-        description: |
-          New version for the release
-          If the version is in format <major>.<minor>.<patch> a new release is emitted.
-          Otherwise for other format ( for example <major>.<minor>.<patch>-beta.1 ), a prerelease is emitted.
-        default: "0.0.1"
-        required: true
-        type: string
-@@ -15,6 +18,8 @@ on:
-jobs:
-  release:
-    runs-on: ubuntu-latest
-    permissions:
-      contents: write
-    steps:
-      - uses: actions/checkout@v2
+- uses: Platane/snk@v2
+  with:
+    github_user_name: Jose-Antonio98
 
-@@ -71,15 +76,15 @@ jobs:
-            git tag v$( echo $VERSION | cut -d. -f 1-1 )
-            git tag v$( echo $VERSION | cut -d. -f 1-2 )
-            git push origin --tags --force
-            echo ::set-output name=prerelease::false
-            echo "prerelease=false" >> $GITHUB_OUTPUT
-          else 
-            echo ::set-output name=prerelease::true
-            echo "prerelease=true" >> $GITHUB_OUTPUT
-          fi
-      - uses: actions/create-release@v1
-      - uses: ncipollo/release-action@v1.11.1
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-        with:
-          tag_name: v${{ github.event.inputs.version }}
-          tag: v${{ github.event.inputs.version }}
-          body: ${{ github.event.inputs.description }}
-          prerelease: ${{ steps.push-tags.outputs.prerelease }}
+      supported options:
+      - palette:     A preset of color, one of [github, github-dark, github-light]
+      - color_snake: Color of the snake
+      - color_dots:  Coma separated list of dots color.
+                     The first one is 0 contribution, then it goes from the low contribution to the highest.
+                     Exactly 5 colors are expected.
+    outputs: |
+      dist/github-snake.svg
+      dist/github-snake-dark.svg?palette=github-dark
+      dist/ocean.gif?color_snake=orange&color_dots=#bfd6f6,#8dbdff,#64a1f4,#4b91f1,#3c7dd9
