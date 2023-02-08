@@ -8,7 +8,7 @@
   Tutorial para Git stats nesse link: [tutorial](https://github.com/anuraghazra/github-readme-stats/blob/master/readme.md#deploy-on-your-own-vercel-instance)
   
   
-  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jose-Antonio98&show_icons=true&theme=transparent)
+  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jose-Antonio98&show_icons=true&theme=transparent&include_all_commits=true)
   
   
   <div style="display: inline_block"><br>
