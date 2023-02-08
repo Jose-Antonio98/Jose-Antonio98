@@ -3,13 +3,6 @@
 - 🔭 Cursando Ciência de dados na UNIVESP
 - 🌱 Estudando back-end Java
 - 😄 Pronouns: Ele/dele
-
-##
-  Tutorial para Git stats nesse link: [tutorial](https://github.com/anuraghazra/github-readme-stats/blob/master/readme.md#deploy-on-your-own-vercel-instance)
-  
-  
-  ![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=Jose-Antonio98&show_icons=true&theme=transparent&include_all_commits=true)
-  
   
   <div style="display: inline_block"><br>
     <img align="center" alt="Joseph-Java" height="60" width="70" src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original-wordmark.svg">
