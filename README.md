@@ -1,4 +1,4 @@
-### Olá, eu sou a José Antonio, estou aqui tentando demonstrar a evolução de meus estudos e conhecimentos ⚡
+### Olá, eu sou a José Antonio ⚡
 
 - 🔭 Cursando Ciência de dados na UNIVESP
 - 🌱 Estudando back-end Java
